@@ -26,6 +26,18 @@
   p {
     @apply text-sm text-default-text;
   }
+
+  form {
+    @apply rounded-xl p-4;
+  }
+  label {
+    @apply mt-4 tracking-tight;
+  }
+  input,
+  select,
+  textarea {
+    @apply rounded bg-white p-1 border shadow-sm;
+  }
 }
 
 @layer components {
@@ -34,5 +46,8 @@
   }
   .btn {
     @apply hover:no-underline bg-brown-accent hover:bg-brown-accent-hover tracking-wider w-full text-center text-nav cursor-pointer uppercase px-4 py-2 rounded transition-colors block;
+  }
+  .select-priority {
+    @apply mx-1
   }
 }
